@@ -1,4 +1,4 @@
-(ns toolbox.core)
+(ns io.trosa.toolbox.core)
 
 (defn foo
   "I don't do a whole lot."
