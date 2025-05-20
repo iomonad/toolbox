@@ -16,4 +16,5 @@
   :profiles {:dev {:dependencies [[org.clojure/tools.namespace "1.4.4"]]
                    :source-paths ["dev"]}
              :uberjar {:aot :all}}
+  :aliases {"ci"      ["test"]}
   :repl-options {:init-ns user})
