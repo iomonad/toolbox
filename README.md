@@ -1,6 +1,6 @@
 # toolbox  [![Clojure CI](https://github.com/iomonad/toolbox/actions/workflows/clojure.yml/badge.svg?branch=master)](https://github.com/iomonad/toolbox/actions/workflows/clojure.yml)
 
-<a href="https://github.com/iomonad/toolbox"><img src=".github/banner.png" height="180" align="right"></a>
+<a href="https://github.com/iomonad/toolbox"><img src=".github/banner.png" height="200" align="right"></a>
 
 > [!NOTE]
 A set of utils to work with Clojure projects
