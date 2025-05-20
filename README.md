@@ -1,8 +1,20 @@
-# toolbox
+# toolbox  [![Clojure CI](https://github.com/iomonad/toolbox/actions/workflows/clojure.yml/badge.svg?branch=master)](https://github.com/iomonad/toolbox/actions/workflows/clojure.yml)
+
+<a href="https://github.com/iomonad/toolbox"><img src=".github/banner.png" height="180" align="right"></a>
+
+> [!NOTE]
+A set of utils to work with Clojure projects
+
+> [!IMPORTANT]
+> Work only with JDK >=21
+
+## Changelog
+
+### UNRELEASED
 
 ## License
 
-Copyright © 2025 iomonad
+Copyright © 2024-2025 iomonad <iomonad@riseup.net>
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
