@@ -1,9 +1,16 @@
 (ns io.trosa.toolbox.maths.algos)
 
+;;    _____  .__
+;;   /  _  \ |  |    ____   ____
+;;  /  /_\  \|  |   / ___\ /  _ \
+;; /    |    \  |__/ /_/  >  <_> )
+;; \____|__  /____/\___  / \____/
+;;         \/     /_____/
+
 (defn is-palindrome?
   "Check if the number is a palindrome"
-  [n]
   {:added "1.0.0"}
+  [n]
   (= (seq (str n)) (reverse (str n))))
 
 (defn palindromes

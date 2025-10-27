@@ -1,7 +1,13 @@
 (ns io.trosa.toolbox.collections)
+;; _________        .__  .__
+;; \_   ___ \  ____ |  | |  |   ______
+;; /    \  \/ /  _ \|  | |  |  /  ___/
+;; \     \___(  <_> )  |_|  |__\___ \
+;;  \______  /\____/|____/____/____  >
+;;         \/                      \/
 
 (defn- merge-objs
-  ^{:added "1.1.0"}
+  {:added "1.1.0"}
   [{:keys [merge-colls
            scalar-into-coll]
     :or {scalar-into-coll false
@@ -19,13 +25,13 @@
 
 (defn deep-merge-with-opts
   "Deep-merge with options"
-  ^{:added "1.1.0"}
+  {:added "1.1.0"}
   ([_merge-opts] nil)
   ([merge-opts obj & objs]
    (reduce (partial merge-objs merge-opts) obj objs)))
 
 (defn deep-merge
   "Deep merge the structures"
-  ^{:added "1.1.0"}
+  {:added "1.1.0"}
   [& objs]
   (apply deep-merge-with-opts {} objs))

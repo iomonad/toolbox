@@ -12,7 +12,8 @@
                                       :password :env/clojars_password
                                       :sign-releases false}]]
   :min-lein-version "2.5.3"
-  :dependencies [[org.clojure/clojure "1.12.0"]]
+  :dependencies [[org.clojure/clojure "1.12.0"]
+                 [org.clojure/core.async "1.8.741"]]
   :profiles {:dev {:dependencies [[org.clojure/tools.namespace "1.5.0"]]
                    :source-paths ["dev"]}
              :uberjar {:aot :all}}

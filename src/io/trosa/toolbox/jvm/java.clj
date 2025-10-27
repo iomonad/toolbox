@@ -1,12 +1,19 @@
-(ns io.trosa.toolbox.java
+(ns io.trosa.toolbox.jvm.java
   (:require [clojure.reflect :as r]
             [clojure.pprint :refer [print-table]]
             [clojure.string :as str]
             [io.trosa.toolbox.collections :refer [deep-merge]]))
 
+;;      ____.
+;;     |    |____ ___  _______
+;;     |    \__  \\  \/ /\__  \
+;; /\__|    |/ __ \\   /  / __ \_
+;; \________(____  /\_/  (____  /
+;;               \/           \/
+
 (defn class-methods
   "Retrieve all the class methods"
-  ^{:added "1.1.0"}
+  {:added "1.1.0"}
   [object]
   (->> (r/reflect object)
        :members
@@ -15,14 +22,14 @@
 
 (defn print-class-methods
   "Print as table all the methods of a class Object"
-  ^{:added "1.1.0"}
+  {:added "1.1.0"}
   [object]
   (some-> (class-methods object)
           (print-table)))
 
-(defn get-properties
+(defn get-properties-map
   "Return all the properties, by nested map"
-  ^{:added "1.1.0"}
+  {:added "1.1.0"}
   []
   (->> (System/getProperties)
        (map (fn [[k v]]
@@ -33,6 +40,6 @@
 (defn java-informations
   "Return compiled JVM/JAVA informations as structured
    map"
-  ^{:added "1.1.0"}
+  {:added "1.1.0"}
   []
-  (:java (get-properties)))
+  (:java (get-properties-map)))
