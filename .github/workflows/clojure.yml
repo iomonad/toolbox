@@ -49,3 +49,5 @@ jobs:
       id: deployment
       if: github.ref == 'refs/heads/master'
       uses: actions/deploy-pages@v4
+      with:
+        path: 'public'
