@@ -1,10 +1,5 @@
-(ns io.trosa.toolbox.collections)
-;; _________        .__  .__
-;; \_   ___ \  ____ |  | |  |   ______
-;; /    \  \/ /  _ \|  | |  |  /  ___/
-;; \     \___(  <_> )  |_|  |__\___ \
-;;  \______  /\____/|____/____/____  >
-;;         \/                      \/
+(ns io.trosa.toolbox.collections
+  "Utils intended to work with collections")
 
 (defn- merge-objs
   {:added "1.1.0"}

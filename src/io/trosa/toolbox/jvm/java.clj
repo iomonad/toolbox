@@ -4,13 +4,6 @@
             [clojure.string :as str]
             [io.trosa.toolbox.collections :refer [deep-merge]]))
 
-;;      ____.
-;;     |    |____ ___  _______
-;;     |    \__  \\  \/ /\__  \
-;; /\__|    |/ __ \\   /  / __ \_
-;; \________(____  /\_/  (____  /
-;;               \/           \/
-
 (defn class-methods
   "Retrieve all the class methods"
   {:added "1.1.0"}
