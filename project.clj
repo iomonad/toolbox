@@ -17,5 +17,6 @@
   :profiles {:dev {:dependencies [[org.clojure/tools.namespace "1.5.0"]]
                    :source-paths ["dev"]}
              :uberjar {:aot :all}}
+  :plugins [[lein-marginalia "0.9.2"]]
   :aliases {"ci"      ["test"]}
   :repl-options {:init-ns user})
