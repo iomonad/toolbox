@@ -1,4 +1,4 @@
-name: Clojure CI
+name: Clojure CI + Clojars + Marginalia
 
 on:
   push:
@@ -33,34 +33,18 @@ jobs:
 
     - name: Run tests
       run: lein test
-  #############################################
-  ## Clojars
-  #############################################
-  clojars:
-    runs-on: ubuntu-latest
-    needs: build
+
     - name: Deploy to Clojars
       if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/devel'
       run: lein deploy
       env:
         CLOJARS_USERNAME: ${{ secrets.CLOJARS_USERNAME }}
         CLOJARS_PASSWORD: ${{ secrets.CLOJARS_PASSWORD }}
-  #############################################
-  ## Marginalia
-  #############################################
-  marginalia:
-    permissions:
-      id-token: write
-      pages: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Generate documentation
-        if: github.ref == 'refs/heads/master'
-        run: lein marg -d public -f index.html
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+
+    - name: Generate documentation
+      if: github.ref == 'refs/heads/master'
+      run: lein marg -d public -f index.html
+
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
