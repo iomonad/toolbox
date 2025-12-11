@@ -3,10 +3,30 @@
 <a href="https://github.com/iomonad/toolbox"><img src=".github/banner.png" height="200" align="right"></a>
 
 > [!NOTE]
-A set of utils to work with Clojure projects
+A set of utils to work with Clojure projects. This library aims to be **zero dependencies**.
 
 > [!IMPORTANT]
 > Work only with JDK >=21
+
+## References
+
+### JVM
+
+### Maths
+
+#### Linear Algebra
+
+### Collections
+
+### FileSystem
+
+### Graph
+
+### Intervals
+
+### Regexes
+
+### Set
 
 ## Changelog
 
