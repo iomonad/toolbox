@@ -1,4 +1,4 @@
-(ns io.trosa.toolbox.set
+(ns toolbox.set
   "Functions intended to work with set(s)"
   (:require [clojure.set :as set]))
 

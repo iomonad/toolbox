@@ -1,6 +1,6 @@
 (ns user
-  (:require [io.trosa.toolbox.jvm.java :as java]
-            [io.trosa.toolbox.jvm.classpath :as cp]
+  (:require [toolbox.jvm.java :as java]
+            [toolbox.jvm.classpath :as cp]
             [clojure.tools.namespace.repl :refer [refresh]]))
 
 (comment

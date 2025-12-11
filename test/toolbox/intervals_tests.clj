@@ -1,6 +1,6 @@
 (ns toolbox.intervals-tests
   (:require [clojure.test :refer :all]
-            [io.trosa.toolbox.intervals :refer [merge-overlapping-intervals]]))
+            [toolbox.intervals :refer [merge-overlapping-intervals]]))
 
 (deftest intervals-tests
   (testing "merge interval is working"

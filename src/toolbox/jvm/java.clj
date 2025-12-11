@@ -1,8 +1,8 @@
-(ns io.trosa.toolbox.jvm.java
+(ns toolbox.jvm.java
   (:require [clojure.reflect :as r]
             [clojure.pprint :refer [print-table]]
             [clojure.string :as str]
-            [io.trosa.toolbox.collections :refer [deep-merge]]))
+            [toolbox.collections :refer [deep-merge]]))
 
 (defn class-methods
   "Retrieve all the class methods"

@@ -1,4 +1,4 @@
-(ns io.trosa.toolbox.intervals
+(ns toolbox.intervals
   "Function intended to work with intervals ")
 
 (defn merge-overlapping-intervals

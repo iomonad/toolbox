@@ -1,6 +1,6 @@
-(ns io.trosa.toolbox.jvm.classpath
+(ns toolbox.jvm.classpath
   (:require [clojure.walk :refer [keywordize-keys]]
-            [io.trosa.toolbox.jvm.java :refer [java-informations]]
+            [toolbox.jvm.java :refer [java-informations]]
             [clojure.string :as str]
             [clojure.java.io :as io]
             [clojure.pprint :refer [print-table]])
