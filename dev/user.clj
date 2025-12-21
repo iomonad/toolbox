@@ -9,4 +9,6 @@
 
   (cp/get-clojure-version)
   (cp/get-lein-project-version)
-  (cp/get-lein-project-name))
+  (cp/get-lein-project-name)
+
+  (cp/dump-cp-libraries))
