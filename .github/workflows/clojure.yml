@@ -1,4 +1,4 @@
-name: Clojure CI + Clojars + Marginalia
+name: Clojure CI + Clojars
 
 on:
   push:
@@ -40,14 +40,3 @@ jobs:
       env:
         CLOJARS_USERNAME: ${{ secrets.CLOJARS_USERNAME }}
         CLOJARS_PASSWORD: ${{ secrets.CLOJARS_PASSWORD }}
-
-    - name: Generate documentation
-      if: github.ref == 'refs/heads/master'
-      run: lein marg -d public -f index.html
-
-    - name: Deploy to GitHub Pages
-      id: deployment
-      if: github.ref == 'refs/heads/master'
-      uses: actions/deploy-pages@v4
-      with:
-        path: 'public'
