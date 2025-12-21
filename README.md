@@ -28,6 +28,10 @@ A set of utils to work with Clojure projects. This library aims to be **zero dep
 
 ### Set
 
+### Binary
+
+- `ByteBuffer` NIO thin wrapper
+
 ## Changelog
 
 ### UNRELEASED
