@@ -1,4 +1,4 @@
-(ns io.trosa.toolbox.collections
+(ns toolbox.collections
   "Utils intended to work with collections")
 
 (defn- merge-objs

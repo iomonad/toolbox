@@ -1,4 +1,4 @@
-(defproject io.trosa/toolbox "1.1.2"
+(defproject io.trosa/toolbox "1.1.3"
   :description "Utils and Algorithms used on daily basis"
   :url "https://github.com/iomonad/toolbox"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
@@ -12,8 +12,7 @@
                                       :password :env/clojars_password
                                       :sign-releases false}]]
   :min-lein-version "2.5.3"
-  :dependencies [[org.clojure/clojure "1.12.0"]
-                 [org.clojure/core.async "1.8.741"]]
+  :dependencies [[org.clojure/clojure "1.12.4"]]
   :profiles {:dev {:dependencies [[org.clojure/tools.namespace "1.5.0"]]
                    :source-paths ["dev"]}
              :uberjar {:aot :all}}

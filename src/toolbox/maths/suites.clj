@@ -1,4 +1,4 @@
-(ns io.trosa.toolbox.maths.suites)
+(ns toolbox.maths.suites)
 
 (def ^{:added "1.0.0"}
   fib

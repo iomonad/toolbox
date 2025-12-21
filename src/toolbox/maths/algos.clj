@@ -1,4 +1,4 @@
-(ns io.trosa.toolbox.maths.algos)
+(ns toolbox.maths.algos)
 
 (defn is-palindrome?
   "Check if the number is a palindrome"
