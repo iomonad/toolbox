@@ -14,29 +14,49 @@ A set of utils to work with Clojure projects. This library aims to be **zero dep
 
 #### [Java](https://cljdoc.org/d/io.trosa/toolbox/CURRENT/api/toolbox.jvm.java)
 
+- Properties as Map
+- Class methods dump (useful to explore Java libraries)
+- Java Runtime informations (via properties)
+
 #### [Classpath](https://cljdoc.org/d/io.trosa/toolbox/CURRENT/api/toolbox.jvm.classpath)
+
+- Clojure project name and version extractor (via leiningen)
+- Classpath JAR's listing
+- Dependencies listing
 
 ### Maths
 
 #### [Linear Algebra](https://cljdoc.org/d/io.trosa/toolbox/CURRENT/api/toolbox.maths.algebra.linear)
 
+- Reduced Row Echelon Form and Applications (RREF) function
+
 #### [Suites](https://cljdoc.org/d/io.trosa/toolbox/CURRENT/api/toolbox.maths.suites)
+
+- Fibonnaci suite
 
 #### [Algos](https://cljdoc.org/d/io.trosa/toolbox/CURRENT/api/toolbox.maths.algos)
 
 ### [Collections](https://cljdoc.org/d/io.trosa/toolbox/CURRENT/api/toolbox.collections)
 
+- Deep-merging with collection support
+
 ### [FileSystem](https://cljdoc.org/d/io.trosa/toolbox/CURRENT/api/toolbox.fs)
 
 ### [Pprint](https://cljdoc.org/d/io.trosa/toolbox/CURRENT/api/toolbox.pprint)
+
+- Method to print `ByteBuffer` in `HexDump` like format.
 
 ### [Graph](https://cljdoc.org/d/io.trosa/toolbox/CURRENT/api/toolbox.graph)
 
 ### [Intervals](https://cljdoc.org/d/io.trosa/toolbox/CURRENT/api/toolbox.intervals)
 
+- Overlapping intervals merge algorithm
+
 ### [Regexes](https://cljdoc.org/d/io.trosa/toolbox/CURRENT/api/toolbox.regexes)
 
 ### [Set](https://cljdoc.org/d/io.trosa/toolbox/CURRENT/api/toolbox.set)
+
+- `PowerSet` implementation
 
 ### [Binary](https://cljdoc.org/d/io.trosa/toolbox/CURRENT/api/toolbox.binary)
 
