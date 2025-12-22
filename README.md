@@ -12,23 +12,33 @@ A set of utils to work with Clojure projects. This library aims to be **zero dep
 
 ### JVM
 
+#### [Java](https://cljdoc.org/d/io.trosa/toolbox/CURRENT/api/toolbox.jvm.java)
+
+#### [Classpath](https://cljdoc.org/d/io.trosa/toolbox/CURRENT/api/toolbox.jvm.classpath)
+
 ### Maths
 
-#### Linear Algebra
+#### [Linear Algebra](https://cljdoc.org/d/io.trosa/toolbox/CURRENT/api/toolbox.maths.algebra.linear)
 
-### Collections
+#### [Suites](https://cljdoc.org/d/io.trosa/toolbox/CURRENT/api/toolbox.maths.suites)
 
-### FileSystem
+#### [Algos](https://cljdoc.org/d/io.trosa/toolbox/CURRENT/api/toolbox.maths.algos)
 
-### Graph
+### [Collections](https://cljdoc.org/d/io.trosa/toolbox/CURRENT/api/toolbox.collections)
 
-### Intervals
+### [FileSystem](https://cljdoc.org/d/io.trosa/toolbox/CURRENT/api/toolbox.fs)
 
-### Regexes
+### [Pprint](https://cljdoc.org/d/io.trosa/toolbox/CURRENT/api/toolbox.pprint)
 
-### Set
+### [Graph](https://cljdoc.org/d/io.trosa/toolbox/CURRENT/api/toolbox.graph)
 
-### Binary
+### [Intervals](https://cljdoc.org/d/io.trosa/toolbox/CURRENT/api/toolbox.intervals)
+
+### [Regexes](https://cljdoc.org/d/io.trosa/toolbox/CURRENT/api/toolbox.regexes)
+
+### [Set](https://cljdoc.org/d/io.trosa/toolbox/CURRENT/api/toolbox.set)
+
+### [Binary](https://cljdoc.org/d/io.trosa/toolbox/CURRENT/api/toolbox.binary)
 
 - `ByteBuffer` NIO thin wrapper
 
