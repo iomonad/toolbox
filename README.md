@@ -68,7 +68,7 @@ A set of utils to work with Clojure projects. This library aims to be **zero dep
 
 ## License
 
-Copyright © 2024-2025 iomonad <iomonad@riseup.net>
+Copyright © 2024-2026 iomonad <iomonad@riseup.net>
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
