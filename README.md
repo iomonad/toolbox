@@ -1,4 +1,4 @@
-# toolbox  [![Clojure CI](https://github.com/iomonad/toolbox/actions/workflows/clojure.yml/badge.svg?branch=master)](https://github.com/iomonad/toolbox/actions/workflows/clojure.yml) [![cljdoc badge](https://cljdoc.org/badge/io.trosa/toolbox)](https://cljdoc.org/d/io.trosa/toolbox)
+# toolbox  [![Clojure CI](https://github.com/iomonad/toolbox/actions/workflows/clojure.yml/badge.svg?branch=master)](https://github.com/iomonad/toolbox/actions/workflows/clojure.yml)[![Clojars Project](https://img.shields.io/clojars/v/io.trosa/toolbox.svg)](https://clojars.org/io.trosa/toolbox) [![cljdoc badge](https://cljdoc.org/badge/io.trosa/toolbox)](https://cljdoc.org/d/io.trosa/toolbox)
 
 <a href="https://github.com/iomonad/toolbox"><img src=".github/banner.png" height="200" align="right"></a>
 
