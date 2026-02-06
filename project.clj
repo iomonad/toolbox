@@ -1,4 +1,4 @@
-(defproject io.trosa/toolbox "1.1.5-SNAPSHOT"
+(defproject io.trosa/toolbox "1.1.6-SNAPSHOT"
   :description "Utils and Algorithms used on daily basis"
   :url "https://github.com/iomonad/toolbox"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
