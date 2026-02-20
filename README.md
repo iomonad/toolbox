@@ -8,6 +8,14 @@ A set of utils to work with Clojure projects. This library aims to be **zero dep
 > [!IMPORTANT]
 > Work only with JDK >=21
 
+## Testing
+
+Project is managed by `deps.edn`. To launch tests, execute the following command:
+
+```bash
+clj -M:test
+```
+
 ## References
 
 ### JVM
