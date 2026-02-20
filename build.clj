@@ -1,9 +1,11 @@
 (ns build
   (:require [clojure.tools.build.api :as b]
+            [clojure.java.shell :as sh]
+            [clojure.string :as str]
             [deps-deploy.deps-deploy :as dd]))
 
 (def lib       'io.trosa/toolbox)
-(def version   "1.1.6-SNAPSHOT")
+(def version    (some-> (sh/sh "git" "describe" "--tags" "--abbrev=0") :out (str/trim-newline)))
 (def class-dir "target/classes")
 (def jar-file  (format "target/%s-%s.jar" (name lib) version))
 (def basis     (delay (b/create-basis {:project "deps.edn"})))
