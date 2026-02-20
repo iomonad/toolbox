@@ -19,8 +19,7 @@
    :pom-data [[:licenses
                [:license
                 [:name "Eclipse Public License 2.0"]
-                [:url "http://www.eclipse.org/legal/epl-2.0"]]]
-              [:organisation "io.trosa"]]})
+                [:url "http://www.eclipse.org/legal/epl-2.0"]]]]})
 
 (defn jar [_]
   (b/write-pom (merge
