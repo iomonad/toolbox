@@ -3,6 +3,8 @@ name: Clojure CI + Clojars
 on:
   push:
     branches: [ "master", "devel" ]
+    tags: 
+      - '*'
   pull_request:
     branches: [ "master", "devel" ]
 
