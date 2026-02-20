@@ -1,0 +1,15 @@
+#kaocha/v1
+ {:plugins #profile
+            {:default [:kaocha.plugin/print-invocations]
+             :ci [:kaocha.plugin/junit-xml
+                  :kaocha.plugin/cloverage
+                  :kaocha.plugin/profiling]}
+  :kaocha.plugin.junit-xml/target-file "target/junit.xml"
+  :kaocha.plugin.junit-xml/omit-system-out? true
+  :cloverage/opts {:ns-exclude-regex []
+                   :coveralls? true}
+  :capture-output? false
+  :reporter [kaocha.report/documentation]
+  :tests [{:id :clj-unit
+           :test-paths  ["test"]
+           :ns-patterns ["toolbox*"]}]}
