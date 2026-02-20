@@ -11,12 +11,25 @@
 (defn clean [_]
   (b/delete {:path "target"}))
 
+(def pom-data-base
+  {:scm {:url "http://github.com/iomonad/toolbox"
+         :connection "scm:git:git://github.com/iomonad/toolbox.git"
+         :developerConnection "scm:git:ssh://git@github.com/iomonad/toolbox.git"
+         :tag version}
+   :pom-data [[:licenses
+               [:license
+                [:name "Eclipse Public License 2.0"]
+                [:url "http://www.eclipse.org/legal/epl-2.0"]]]
+              [:organisation "io.trosa"]]})
+
 (defn jar [_]
-  (b/write-pom {:class-dir class-dir
-                :lib lib
-                :version version
-                :basis @basis
-                :src-dirs ["src"]})
+  (b/write-pom (merge
+                pom-data-base
+                {:class-dir class-dir
+                 :lib lib
+                 :version version
+                 :basis @basis
+                 :src-dirs ["src"]}))
   (b/copy-dir  {:src-dirs ["src" "resources"]
                 :target-dir class-dir})
   (b/jar {:class-dir class-dir
