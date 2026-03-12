@@ -1,0 +1,37 @@
+name: Workflow security audit
+on:
+  push:
+    branches: [master, devel]
+    paths:
+      - '.github/workflows/**'
+  pull_request:
+    paths:
+      - '.github/workflows/**'
+
+permissions: {}
+
+jobs:
+  zizmor:
+    name: Scan zizmor
+    runs-on: ubuntu-latest
+    permissions:
+      security-events: write
+      contents: read
+      actions: read
+    steps:
+      - uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955
+        with:
+          persist-credentials: false
+
+      - name: Installzizmor
+        run: pipx install zizmor
+
+      - name: Scan workflows
+        run: zizmor --format=sarif --offline .github/workflows/ > results.sarif
+        continue-on-error: true
+
+      - name: Upload SARIF results
+        uses: github/codeql-action/upload-sarif@f5c2471be782132e47a6e6f9c725e56730d6e9a3
+        with:
+          sarif_file: results.sarif
+          category: zizmor
